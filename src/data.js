@@ -1,26 +1,34 @@
 export const projects = [
   {
-    title: "Crackers Bill sofware",
+    title: "Crackers Bill Software",
     category: "Web",
     image: "/image1.png",
     desc: "Real time working ERP software",
     tech: ["html", "python", "mongodb"],
+
+    link: "https://sivacrackers.vercel.app/"
   },
+
   {
     title: "CIT Smart Campus",
     category: "IoT",
-    image: "/image2",
+    image: "/image2.png",
     desc: "IOT enabled software for college campus",
-    tech: ["ESP32", "Firebase","react"],
+    tech: ["ESP32", "Firebase", "react"],
+
+    link: "https://cit-smart-campus.lovable.app/dashboard"
   },
+
   {
-    title: "Smart Mess Management software",
+    title: "Smart Mess Management Software",
     category: "Web",
-    image: "/image3",
-    desc: "Software to reduce mess food Waste",
-    tech: ["python", "html","css","js"],
+    image: "/image3.png",
+    desc: "Software to reduce mess food waste",
+    tech: ["python", "html", "css", "js"],
+
+    link: "https://smart-messhall.lovable.app/"
   },
-]
+];
 
 export const reviews = [
   {
@@ -44,18 +52,19 @@ export const services = [
 export const videos = [
   {
     title: "Brand Promotion Edit",
-    src: "/videos/edit3.mp4",
+    src: "https://drive.google.com/file/d/1X1fDXt8ixRbDqLLaCZVqZJWjYixKTJH8/preview",
     desc: "Professional brand promotional video edit."
   },
 
   {
-    title: "College club Edit",
-    src: "/videos/edit2.mp4",
-    desc: "sports day special edit"
+    title: "College Club Edit",
+    src: "https://drive.google.com/file/d/1KODkBfJ_6d87iC61bd-EHb6s3DZsdqt1/preview",
+    desc: "Sports day special edit"
   },
+
   {
-  title: "Trending transition Edit",
-  src: "/videos/edit1.mp4",
-  desc: "trending reel edit"
-}
-]
+    title: "Trending Transition Edit",
+    src: "https://drive.google.com/file/d/1sd8zCGqSznfWxf-o44YIIVDTvNYUe4YE/preview",
+    desc: "Trending reel edit"
+  }
+];

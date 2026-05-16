@@ -355,44 +355,40 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-20 justify-items-center">
 
-          {videos.map((video) => (
+  {videos.map((video) => (
 
-            <div
-              key={video.title}
-              className="flex flex-col items-center gap-6"
-            >
+    <div
+      key={video.title}
+      className="flex flex-col items-center gap-6"
+    >
 
-              <div className="w-[320px] md:w-[360px] aspect-[9/16] relative rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.25)]">
+      <div className="w-[320px] md:w-[360px] aspect-[9/16] rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(34,211,238,0.25)]">
 
-                <video
-                  src={video.src}
-                  autoPlay
-                  muted
-                  loop
-                  controls
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+        <iframe
+          src={video.src}
+          allow="autoplay"
+          className="w-full h-full"
+        />
 
-              </div>
+      </div>
 
-              <div className="text-center max-w-[320px] md:max-w-[360px]">
+      <div className="text-center max-w-[320px] md:max-w-[360px]">
 
-                <h3 className="text-xl font-semibold text-white">
-                  {video.title}
-                </h3>
+        <h3 className="text-xl font-semibold text-white">
+          {video.title}
+        </h3>
 
-                <p className="text-gray-400 mt-2 text-sm leading-6">
-                  {video.desc}
-                </p>
+        <p className="text-gray-400 mt-2 text-sm leading-6">
+          {video.desc}
+        </p>
 
-              </div>
+      </div>
 
-            </div>
+    </div>
 
-          ))}
+  ))}
 
-        </div>
+</div>
 
       </section>
 
