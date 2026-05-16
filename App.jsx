@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import hero1 from "./assets/hero1.jpeg";
-import hero2 from "./assets/hero2.jpg";
-import hero3 from "./assets/hero3.jpg";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
@@ -238,50 +235,47 @@ export default function App() {
         </motion.div>
 
         {/* RIGHT IMAGES */}
-<motion.div
-  initial={{ opacity: 0, x: 80 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1 }}
-  className="flex-1 flex justify-center mt-12 md:mt-0"
->
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex-1 flex justify-center mt-12 md:mt-0"
+        >
 
-  <Swiper
-    modules={[Autoplay]}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false,
-    }}
-    loop={true}
-    className="w-[260px] md:w-[420px]"
-  >
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="w-[260px] md:w-[420px]"
+          >
 
-    <SwiperSlide>
-      <img
-        src={hero1}
-        alt="Hero 1"
-        className="w-full h-[500px] object-cover rounded-3xl drop-shadow-[0_0_40px_rgba(34,211,238,0.35)]"
-      />
-    </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/src/assets/hero1.jpeg"
+                className="w-full object-contain rounded-3xl drop-shadow-[0_0_40px_rgba(34,211,238,0.35)]"
+              />
+            </SwiperSlide>
 
-    <SwiperSlide>
-      <img
-        src={hero2}
-        alt="Hero 2"
-        className="w-full h-[500px] object-cover rounded-3xl drop-shadow-[0_0_40px_rgba(168,85,247,0.35)]"
-      />
-    </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/src/assets/hero2.jpg"
+                className="w-full object-contain rounded-3xl drop-shadow-[0_0_40px_rgba(168,85,247,0.35)]"
+              />
+            </SwiperSlide>
 
-    <SwiperSlide>
-      <img
-        src={hero3}
-        alt="Hero 3"
-        className="w-full h-[500px] object-cover rounded-3xl drop-shadow-[0_0_40px_rgba(16,185,129,0.35)]"
-      />
-    </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src="/src/assets/hero3.jpg"
+                className="w-full object-contain rounded-3xl drop-shadow-[0_0_40px_rgba(16,185,129,0.35)]"
+              />
+            </SwiperSlide>
 
-  </Swiper>
+          </Swiper>
 
-</motion.div>
+        </motion.div>
 
       </section>
 
